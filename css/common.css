@@ -1,0 +1,114 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --title-color: #ffffff;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --bcg-secondary-color: #2f303a;
+  --bcg-primary-color: #f5f4fa;
+}
+
+body {
+  background-color: var(--title-color);
+  color: var(--primary-text-color);
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+address {
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+header {
+  background-color: var(--title-color);
+}
+.logo {
+  color: #000000;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+}
+.logo-accent {
+  color: var(--accent-color);
+}
+/* основной цвет #212121 */
+/* вторичный цвет #757575 */
+/*  голубой акцент #2196F3 */
+/* белый цвет #FFFFFF */
+/* фон темный #2F303A */
+/* фон серый #F5F4FA */
+/* фон белый #E5E5E5 */
+/* текст футер rgba(255,255,255,0.6) */
+
+/* SITE_NAV */
+.site-nav a,/*.link,*/
+.contacts-nav a/*.link*/ {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link.current,
+.contacts-nav .link:hover,
+.contacts-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.contacts-nav .link {
+  color: var(--primary-text-color);
+}
+
+/* FOOTER */
+.footer .logo {
+  color: var(--title-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+}
+.footer {
+  background-color: var(--bcg-secondary-color);
+}
+.footer .link {
+  color: var(--footer-text-color);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+}
+
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--accent-color);
+}
+.footer a[href="https://goo.gl/maps/KZqqGX3hnb8J8rTS9"]
+{
+  color: var(--title-color);
+}
