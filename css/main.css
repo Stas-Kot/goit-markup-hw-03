@@ -36,10 +36,13 @@
   cursor: pointer;
 }
 /* FEATURES */
-.features > .container,
-.about > .container,
+.features,
 .team {
-  margin-top: 94px;
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.about {
+  padding-bottom: 94px;
 }
 
 .features-title {
@@ -84,8 +87,6 @@
 
 .team {
   background-color: var(--bcg-primary-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team-item {
