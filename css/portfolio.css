@@ -1,5 +1,11 @@
-/* Button */
-.button {
+/* MAIN SECTION*/
+
+/* BUTTONS */
+.buttons {
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+
   background-color: var(--bcg-primary-color);
   color: var(--title-text-color);
   font-family: 'Roboto', sans-serif;
@@ -9,27 +15,69 @@
   text-align: center;
   letter-spacing: 0.03em;
 }
-.button:hover,
-.button:focus {
+.buttons:hover,
+.buttons:focus {
   background-color: var(--accent-color);
   color: var(--title-color);
   cursor: pointer;
 }
+.list-buttons {
+  display: flex;
+  /* если по макету то там:
+ padding-bottom: 16px;
+ margin-bottom: 34px; */
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.list-buttons > .item + .item {
+  margin-left: 8px;
+}
 
-/* main section */
+/* PORTFOLIO */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: -15px; */
+}
+.card {
+  display: block;
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  /* margin: 15px; */
+  padding-bottom: 20px;
+  border: 1px solid #eeeeee;
+}
+.card:nth-child(3n) {
+  margin-right: 0;
+}
+.card:nth-last-child(-n + 3) .image {
+  display: block;
+}
+.card-description {
+  margin: 20px 24px 0;
+}
 .portfolio-list-title {
+  margin: 0;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.portfolio-list a {
+.card a {
   text-decoration: none;
 }
 .portfolio-list-item {
+  margin: 0;
+
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
+}
+.main {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
