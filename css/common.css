@@ -25,7 +25,11 @@ body {
 address {
   font-style: normal;
 }
-
+img {
+  min-width: 100%;
+  display: block;
+  height: auto;
+}
 .list {
   margin: 0;
   padding: 0;
