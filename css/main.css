@@ -2,9 +2,11 @@
 .hero {
   background-color: var(--bcg-secondary-color);
   text-align: center;
+  padding: 200px 100px;
 }
 .hero-title {
   margin: 0;
+  margin-bottom: 30px;
   color: var(--title-color);
   font-weight: 900;
   font-size: 44px;
