@@ -44,7 +44,9 @@
 .about {
   padding-bottom: 94px;
 }
-
+.features-item {
+  width: 270px;
+}
 .features-title {
   color: var(--title-text-color);
   font-weight: 700;
